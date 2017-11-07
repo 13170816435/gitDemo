@@ -1,0 +1,129 @@
+<html>
+	<head>
+		<title>成为一达会员吧</title>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="initial-scale=1, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0, width=device-width">
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="css/register.css"/>
+		<script src="js/lib/vue1.0.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body class="page-bar" v-cloak>
+		<div class="calHeight">
+		
+		<div class="headerCon">
+			 <img src="img/bj.png"/>
+			 <!--<a href="" class="rules">活动规则</a>-->
+		</div>
+		
+		<div class="goodCont">
+			<div class="goods-Tip">
+				  	 <span class="recentNew">精品推荐</span>
+				  	 <span class="showLife">享受生活/品质出行</span>
+				  </div> 
+		 <div class="allGoods swiper-container">
+		 	<div class="swiper-wrapper">
+		 		
+					<div class="showGoods OneGoods swiper-slide" v-for="item in cars">
+						  <div class="goodsShow">
+						  	   <img :src="item.imageurl"/><br />
+						  	   <p class="carName">{{item.carname}}</p>
+						  	   <p>￥<strong class="price">{{item.price}}</strong>元<span>/今日价</span></p>
+						  </div>
+					</div>
+					
+			 </div>
+		    </div>
+		</div>
+		<div class="bg"></div>
+		</div>
+		<div class="register-infor">
+			     <div class="register-tit">
+			     	 <p>注册领<strong class="numS">200</strong>优惠券</p>
+			     	 <span>REGISTER AWARD</span>
+			     </div>
+			     
+			     <div class="writeInfor" v-show="NoRegister">
+			     	  <input type="text" placeholder="手机号" class="mobile-pho telNum"/>
+			     	  <div class="operateCode"><input type="text" placeholder="短信验证码" class="code"/><input type="button" class="getCode" onclick="getCode(this)" value="获取验证码"></div>
+			     	  <input type="password" placeholder="请输入密码" class="pwd"/>
+			     	  <input type="password" placeholder="请再次输入密码" class="rePwd"/>
+			     	  <button type="button" class="reg-btn" onclick="loginUp()">立即注册</button>
+			     </div>
+			    <div class="bg anthonerBg"></div>
+			     <div class="ActivityRules">
+			      <!-- <p class="ruleTit"><span></span>活动规则<span></span></p>-->
+			       <div class="order">  
+					   <span style="white-space:pre"></span><span class="line"></span>  
+					   <span style="white-space:pre"></span><span class="txt">活动规则</span>  
+					   <span style="white-space:pre"></span><span class="line"></span>  
+					</div>  
+			     	 <div class="stateRule">
+			     	 	 <img src="img/rule1.png"/>
+			     	 	 <span>输入手机号验证码，领取200约车抵扣券</span>
+			     	 </div>
+			     	 <div class="stateRule">
+			     	 	 <img src="img/rule2.png"/>
+			     	 	 <span>租车券有效期：激活后有效期90天</span>
+			     	 </div> 
+			     	 <div class="stateRule specialRule">
+			     	 	 <img src="img/rule3.png"/>
+			     	 	 <span>该租车券不能与其他优惠券叠加使用，<br />不兑现，不找零</span>
+			     	 </div> 
+			     	 <div class="stateRule">
+			     	 	 <img src="img/rule4.png"/>
+			     	 	 <span>用户需提前2小时以上发起用车请求</span>
+			     	 </div> 
+			     	 
+			     	 <p class="companyName">杭州珺达网络科技有限公司</p>
+			     </div>
+			     
+			     <div class="registerSuccess" v-show="register">
+			     	  <img src="img/cg@1.5x.png"/><br />
+			     	  <span class="gongxi">恭喜你! 注册成功</span><br />
+			     	  <p class="sendGoods"><strong>128</strong>元无门槛租车劵+<strong>72</strong>元无门槛接送劵</p>
+			     	  <button type="button" class="reg-btn" onclick="downLoad()">领取成功,立即下载</button>
+			     </div>
+			     
+			     
+		</div>
+		 <div class="adviceImg" onclick="gotoResiter($('.calHeight'),300)">
+			   <img src="img/toutiao.png"/>  	
+	     </div>
+		<script src="js/lib/jquery-1.10.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/lib/rem.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/lib/config.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/lib/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/register.js" type="text/javascript" charset="utf-8"></script>
+		<!--<script src="js/lib/swiper.min.js"></script>
+		<script type="text/javascript">
+		  var mySwiper = new Swiper('.swiper-container',{
+		//  loop: true,
+		//	autoplay: 3000,
+		  });
+		</script>-->
+		<script type="text/javascript">
+			 function gotoResiter(ele,speed){
+			 	if(!speed) speed = 300;
+				if(!ele){
+					$("html,body").animate({scrollTop:0},speed);
+				}else{
+					if(ele.length>0) $("html,body").animate({scrollTop:$(ele).height()},speed);
+					$('.adviceImg').css('display','none')
+				}
+				
+				return false;
+			 }
+			 
+			 
+			 $(window).scroll(function(){
+			    var h=$(this).scrollTop();//获得滚动条距top的高度
+			    var divHeight=$('.calHeight').height()-170
+			    if(h<divHeight){
+			        $(".adviceImg").fadeIn();
+			    }else{
+			        $(".adviceImg").fadeOut();
+			    }
+			});
+		</script>
+	</body>
+</html>
