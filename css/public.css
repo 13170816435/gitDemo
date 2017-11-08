@@ -1,0 +1,64 @@
+html, body, div, span, applet, object, iframe, table, caption,
+tbody, tfoot, thead, tr, th, td, del, dfn, em, font, img, ins,
+kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr,
+acronym, address, big, cite, code, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-weight: normal;
+  font-family: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: transparent;
+}
+ input, button{
+ 		outline: none;
+ }
+
+body, html {
+	font-size: 50%;
+  /*background-color: #FFF;*/
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+img {
+ /* display: block;*/
+}
+
+ul, li {
+  list-style-type: none;
+}
+
+li {
+  display: inline-block;
+}
+
+a, img {
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  color: #42b983;
+}
+.noData{
+	width:100%;
+	color:red;
+	height:2rem;
+	line-height: 2rem;
+	text-align: center;
+	display: none;
+}

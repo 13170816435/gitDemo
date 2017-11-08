@@ -1,0 +1,291 @@
+.headerCon {
+	width: 100%;
+	position: relative;
+}
+
+.headerCon img {
+	width: 100%;
+}
+
+.rules {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	font-size: 1rem;
+	color: #fff;
+}
+.numS{
+   font-size:1.2rem;
+   color:red;
+}
+.ActivityRules{
+	width:100%;
+	margin-top: 1rem;
+}
+.stateRule{
+	width:14rem;
+	height:2rem;
+	margin:0 auto;
+	margin-bottom:0.5rem;
+	clear:both;
+	line-height: 2rem;
+}
+.specialRule{
+	line-height: initial!important;
+}
+.specialRule span{
+    float: left;
+    margin-top: 0.2rem;
+}
+.stateRule img{
+	margin-left:0.3rem;
+	width:1.8rem;
+	height:1.8rem;
+	float:left;
+	margin-top: 0.1rem;
+}
+.stateRule span{
+	padding-left:1rem;
+	display: inline-block;
+}
+.goodCont {
+	width: 100%;
+	padding-left: 0.5rem;
+	padding-top: 1rem;
+}
+.showGoods:nth-of-type(1) {
+	/*margin-left: 0!important;*/
+	margin-left: 0.3rem;
+}
+.OneGoods {
+	/*margin-left: 0!important;*/
+	/*margin-left: 0.14rem;*/
+}
+
+.goods-Tip {
+	padding-bottom: 1rem;
+}
+
+.goodsShow {
+	width: 7rem;
+}
+
+.goodsShow img {
+	width: 100%;
+	height: 105px;
+}
+
+.goodsShow p:nth-of-type(1) {
+	padding-top: 1rem;
+}
+
+.goodsShow p {
+	padding-bottom: 0.5rem;
+}
+
+.register-infor {
+	width: 100%;
+	clear: both;
+	padding-bottom: 2rem;
+}
+
+.register-tit {
+	width: 100%;
+	text-align: center;
+	height: 3rem;
+	margin-bottom: 2rem;
+	margin-top: 2rem;
+}
+
+.goodsShow span {
+	color: #bbbbbb;
+}
+
+.register-tit p {}
+
+.writeInfor {
+	width: 100%;
+	text-align: center;
+}
+
+.writeInfor input {
+	width: 14rem;
+	height: 2rem;
+	border: none;
+	background-color: #f5f5f5;
+	margin-bottom: 0.5rem;
+	text-indent: 2.5rem;
+	/*color: #bbbbbb;*/
+}
+
+.reg-btn {
+	width: 14rem;
+	height: 2rem;
+	border: none;
+	background-color: red;
+	color: #fff;
+}
+
+.getCode {
+	width: 5rem!important;
+}
+
+.mobile-pho {
+	background: url(../img/sjh@1.5x.png) no-repeat 0.3rem center;
+}
+
+.code {
+	width: 9rem!important;
+	background: url(../img/yzm@1.5x.png) no-repeat 0.3rem center;
+}
+
+.pwd {
+	background: url(../img/mm@1.5x.png) no-repeat 0.3rem center;
+}
+
+.rePwd {
+	background: url(../img/mm@1.5x.png) no-repeat 0.3rem center;
+}
+
+.getCode {
+	text-indent: 0!important;
+	color: #ff2d2d!important;
+}
+
+input {
+	outline: none;
+	margin: 0;
+	padding: 0;
+}
+
+.recentNew {
+	font-weight: bold;
+	font-size: 0.8rem;
+}
+
+.operateCode {
+	width: 14rem;
+	margin: 0 auto;
+}
+
+.operateCode input {
+	float: left;
+}
+
+.register-tit p {
+	font-size: 1rem;
+	font-weight: bold;
+	margin-bottom: 0.4rem;
+}
+
+.register-tit span {
+	font-size: 0.8rem;
+	color: #c5c5c5
+}
+
+.goodsShow {
+	float: left;
+	/*margin-left: 0.6rem;*/
+}
+
+.registerSuccess {
+	/*display: none;*/
+	text-align: center;
+}
+
+.gongxi {
+	line-height: 2rem;
+}
+
+.sendGoods {
+	margin-bottom: 3rem;
+}
+
+.showLife {
+	padding-left: 0.5rem;
+	color: #bcbcbc;
+	font-size: 0.7rem;
+}
+
+.price {
+	color: red;
+	font-size: 0.9rem;
+}
+
+.carName {
+	font-size: 0.8rem;
+}
+
+.bg {
+	width: 100%;
+	height: 0.4rem;
+	background: #f2f2f2;
+}
+
+.allGoods {
+	/*width: 100%;*/
+	height: 11.5rem;
+	/*// 也可以不设置高度，让高度自适应内容的变化*/
+	overflow: hidden;
+	margin-right: 0.7rem;
+}
+.anthonerBg{
+	margin-top:1rem;
+}
+
+/*.allGoods{
+    width: 100%;
+    overflow: hidden;
+    height: 10rem;
+}*/
+
+.swiper-wrapper {
+	/*height: 110%;*/
+	/*// 高度实际为 300 * 110% = 330px*/
+	overflow-x: auto;
+	white-space: nowrap;
+}
+
+.showGoods {
+	display: inline-block;
+	width: 7rem;
+	height: 100%;
+	margin-right: 0.6rem;
+	margin-bottom: 1rem;
+	&:last-of-type {
+		margin-right: 0;
+	}
+}
+.order { 
+ 	font-size:1rem;
+	margin-bottom:1rem;
+	font-weight: bold;
+   text-align: center; 
+   height: 3rem;  
+   line-height: rem;  
+   text-align: center;  
+}  
+ .order .line {  
+   display: inline-block;  
+   width: 4.5rem;  
+   border-top: 1px solid #ccc ;  
+}  
+.order .txt {  
+   /*color: #686868; */ 
+  /* vertical-align: middle; */
+  vertical-align: -0.3rem; 
+} 
+.companyName{
+	text-align: center;
+    margin-top: 1rem;
+    color: darkgray;
+    font-size: 0.7rem;
+} 
+.adviceImg{
+	position:fixed;
+	bottom:0;
+	width:100%;
+}
+.adviceImg img{
+	width:100%;
+}
